@@ -12,6 +12,13 @@ https://github.com/protobuf-c/protobuf-c
 1. msys64\home\user\ 디렉토리에 https://github.com/protobuf-c/protobuf-c 에서 git 소스 체크 아웃 
 2. mingw64.exe 실행 
 3. https://github.com/protobuf-c/protobuf-c 에 설명과 같이 ./autogen.sh && ./configure && make && make install 실행 
+  3.1 .configure 과정에서 아래와 같은 에러가 발생하면, 컴파일러를 설치 
+    configure: error: in `/home/admin/protobuf-c-master/protobuf-c-master':
+    configure: error: no acceptable C compiler found in $PATH
+    See `config.log' for more details
+  3.2 c 컴파일러 설치 방법 
+   
+
 4. (3)번에 의해 protobuf-c의 라이브러리와 실행파일이 생성됨 
 5. /t 디렉토리(테스트 폴더)에서 protoc --c_out=. test-proto3.proto
 6. /t 디렉토리(테스트 폴더)에서 생성된 c파일로 실행 파일을 만들 경우 gcc -o test-proto3 test-proto3.c test-proto3.pb-c.c
