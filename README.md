@@ -13,6 +13,7 @@ https://github.com/protobuf-c/protobuf-c
 2. mingw64.exe 실행 
 3. https://github.com/protobuf-c/protobuf-c 에 설명과 같이 ./autogen.sh && ./configure && make && make install 실행 
   3.1 .configure 과정에서 아래와 같은 에러가 발생하면, 컴파일러를 설치 
+  
     configure: error: in `/home/admin/protobuf-c-master/protobuf-c-master':
     configure: error: no acceptable C compiler found in $PATH
     See `config.log' for more details
